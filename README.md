@@ -6,4 +6,6 @@ spring-boot-java-17
 
 ## Records
 
+No Getter, Setter, toString and hash methods - Lombok alternative
+
 ```Java public record User(String name, String email, Integer id, Address userAddress) {}```
