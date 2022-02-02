@@ -8,4 +8,6 @@ spring-boot-java-17
 
 No Getter, Setter, toString and hash methods - Lombok alternative
 
-```Java public record User(String name, String email, Integer id, Address userAddress) {}```
+```Java 
+public record User(String name, String email, Integer id, Address userAddress) {}
+```
