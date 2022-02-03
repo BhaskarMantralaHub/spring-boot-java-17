@@ -1,0 +1,1 @@
+web: java -jar build/libs/spring-boot-Java-17-0.0.1-SNAPSHOT.jar
