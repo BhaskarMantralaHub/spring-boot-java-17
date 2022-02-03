@@ -1,5 +1,7 @@
 package com.bhaskar.springbootjava17.resource;
 
+//import com.bhaskar.springbootjava17.records.Address;
+//import com.bhaskar.springbootjava17.records.User;
 import com.bhaskar.springbootjava17.records.Address;
 import com.bhaskar.springbootjava17.records.User;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,5 +19,10 @@ public class UserController {
     public User getUser() {
         Address userAddress = new Address("1234 St", "Gilroy", "CA", "USA", 94025);
         return new User("Narayana", "Narayana.Auto@gmail.com", 12234, userAddress);
+    }
+
+    @GetMapping("account/login/recover")
+    public String recover() {
+        return "Recovering password";
     }
 }
