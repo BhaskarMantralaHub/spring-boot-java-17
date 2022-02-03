@@ -14,9 +14,4 @@ public class SpringBootJava17Application {
         SpringApplication.run(SpringBootJava17Application.class, args);
     }
 
-    @PostConstruct
-    void setJavaVersion() {
-        System.setProperty("java.runtime.version", "17");
-    }
-
 }
